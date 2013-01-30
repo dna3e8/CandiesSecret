@@ -87,3 +87,58 @@ h3
 {
     padding:8px;
 }
+
+/* menuitem class is the CssClass value for the asp:Menu StaticMenuItemStyle 
+and also the DynamicMenuItemStyle */
+
+#menu
+{
+    background-color: Black;
+}
+
+#menu .menuitem
+{
+    background-image: url("Images/button_0.png");
+    background-repeat: no-repeat; 
+    height: 30px;
+    width: 120px;
+    text-align:center;
+    padding-top:3px;
+    margin:0;
+}
+
+/*needed so the asp:Menu control anchor tags when rendered in browser have
+transparent background and display as a block rather than inline element */
+
+#menu a, #menu a:visited
+{
+  background: transparent ! important;
+  display: block;
+}
+
+/*needed so the asp:Menu control anchor tags when rendered in browser have
+transparent background and display as a block rather than inline element */
+
+
+#menu a:hover, #menu a:active, #menu a:focus
+{
+  background: transparent ! important;
+  display: block;
+}
+
+
+/* hover class is the CssClass value for the asp:Menu StaticHoverStyle and also the
+DynamicHoverStyle */
+  
+#menu .hover { 
+  background-image: url("Images/button_1.png");
+  background-repeat: no-repeat; 
+  }
+  
+
+/* selected class is the CssClass value for the asp:Menu StaticSelectedStyle */
+ #menu .selected
+  {
+      background-image: url("Images/button_2.png");
+      background-repeat: no-repeat; 
+  }

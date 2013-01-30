@@ -22,7 +22,13 @@
         </div>
         <div id="Navigation">
             <div>
-            &nbsp;&nbsp;Home &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;About US &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;Tribute &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;Calendar &nbsp;&nbsp;|&nbsp;&nbsp; Contact Us &nbsp;&nbsp;
+                 <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" 
+                        DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" 
+                        DynamicVerticalOffset="2"  Orientation="Horizontal" StaticDisplayLevels="2" 
+                        StaticSubMenuIndent="10px">
+                        
+                    </asp:Menu>
+                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
             </div>
         
         
