@@ -1,0 +1,49 @@
+﻿body 
+{
+    
+}
+#Container
+{
+    width:900px;
+    margin:0 auto;
+}
+
+#Masthead
+{
+    width:900px;
+    height:66px;
+}
+
+#Navigation
+{
+    width:900px;
+    height:20px;
+}
+
+#MainContent
+{
+    width:900px;
+}
+
+#LeftColumn
+{
+    width:300px;
+    float:left;
+}
+
+#RightColumn
+{
+    width:600px;
+    float:left;
+}
+
+#Footer
+{
+    width:900px;
+    height:60px;
+}
+
+.clearfloat
+{
+    clear:both
+}

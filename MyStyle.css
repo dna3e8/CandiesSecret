@@ -1,0 +1,90 @@
+﻿body
+{
+    background-color: #99CCFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #000000;
+}
+
+#Container
+{
+    background-color:White;
+}
+
+#Masthead
+{
+    background-color:Navy;
+    color:White;
+    font-size:small;
+    text-align:right;
+}
+
+#Navigation
+{
+    background-color: #808080;
+    color:#FFFFFF;
+}
+
+#MainContent
+{
+    background-image: url('Images/background.jpg');
+    background-repeat: repeat-y;
+}
+
+#LeftColumn
+{
+    text-align:left;
+}
+
+#RightColumn
+{
+    text-align:left;
+    font-size:small;
+}
+
+#Footer
+{
+    color:White;
+    background-color:Navy;
+    text-align:center;
+    font-size:14px;
+}
+
+h1
+{
+    font-size:large;
+    color:Navy;
+}
+
+h2
+{
+    font-size:10ox;
+    color:Navy;
+}
+
+h3
+{
+    font-size:medium;
+    color:Navy;
+}
+
+.moveleft
+{
+    float:left;
+}
+
+.phonenumber
+{
+    padding-top:5px;
+    padding-right:5px;
+}
+
+.leftpad
+{
+    padding:10px;
+}
+
+.rightpad
+{
+    padding:8px;
+}
