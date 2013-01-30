@@ -27,20 +27,20 @@
 
 #LeftColumn
 {
-    width:300px;
+    width:600px;
     float:left;
 }
 
 #RightColumn
 {
-    width:600px;
+    width:300px;
     float:left;
 }
 
 #Footer
 {
     width:900px;
-    height:60px;
+    height:70px;
 }
 
 .clearfloat

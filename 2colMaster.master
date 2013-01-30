@@ -70,7 +70,6 @@
             </div>
             <div id="RightColumn">
                 <asp:ContentPlaceHolder ID="RightContent" runat="server">              
-                     <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/smbus.jpg" AlternateText="bussness Man"/>
                      <div class="rightpad">
                         <p>Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget est. In hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit amet quam. Nunc commodo sodales nunc. Donec est nunc, porttitor et, accumsan nec, pretium quis, mauris. Duis sapien. Nulla felis lorem, 
                     </div>
@@ -82,7 +81,11 @@
 
         <div id="Footer">
             <div>
-            This Website was Created for Educational Purposes
+            This Website was Created for Educational Purposes <br />
+                <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+            <p>
+            Last Modified: 30 Jan 2013
+            </p>
             </div> 
 
         </div>
