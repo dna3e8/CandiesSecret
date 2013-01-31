@@ -7,28 +7,28 @@
         Our History
     </h1>
     <p>
-        How we started...
+        Candie is a Mother and homemaker who realized the demand for women to secretly buy candy and sweets for their personal stashes. She found a website designer and a money backer - both friends - to create this business website and share the business ownership
     </p>
     <h2>
         The Owners:
     </h2>
     <h3>
-    Rob
+        Candie
     </h3>
     <p>
-    
+        Candie is married and has two girls. She loves cooking and is always coming up with great ideas and projects. She got her cooking certificate from Arizona Culinary Institute. Candie does the marketing for the business as well as updates and adds new products.
     </p>
     <h3>
-    Dan
+    Gloria
     </h3>
     <p>
-    
+        Gloria is a financial advisor at Liberty Financial and is a close friend of Candie's. She invested well and is the financial backer for this business. Gloria also takes care of the accounting and books. Gloria lives with her daughter and two cats. 
     </p>
     <h3>
-    Bob
+    Lance
     </h3>
     <p>
-    
+        Lance got his BA from ITT Technical Institute in Denver, CO. Lance works as a website designer and manages Candie's Secret's website. Lance is married and has two children.
     </p>
 </asp:Content>
 
