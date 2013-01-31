@@ -4,12 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftContent" Runat="Server">
     <h1>
-        Welcome to Candies Sevret
+        Welcome to Candies Secret!
     </h1>
 
     <p>
-        *************** a well formatted welcome message in the content area and add any othergraphics or info you want. *****************
-        ************** This page should sell your business idea to the world. You need to format this content using style rules found in your external style sheets. You may not use a table to structure your page content.
+        This is the place to order treats delivered straight to your home, in packaging that says "I ordered cute shoes." Never again will someone see you buying candy at the grocery store and speculating about your weight or diet. Plus, Candie's secret sells a variety of specialty items that you cannot get anywhere else! So enjoy shopping on the site!    
     </p>
 </asp:Content>
 
