@@ -93,12 +93,12 @@ and also the DynamicMenuItemStyle */
 
 #menu
 {
-    background-color: Black;
+    background-color: Red;
 }
 
 #menu .menuitem
 {
-    background-image: url("Images/button_0.png");
+    background-image: url("~/Images/button_0.png");
     background-repeat: no-repeat; 
     height: 30px;
     width: 120px;

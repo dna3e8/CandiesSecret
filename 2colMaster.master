@@ -21,12 +21,28 @@
         
         </div>
         <div id="Navigation">
-            <div>
-                 <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" 
-                        DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" 
-                        DynamicVerticalOffset="2"  Orientation="Horizontal" StaticDisplayLevels="2" 
-                        StaticSubMenuIndent="10px">
-                        
+            <div id="menu">
+                 <asp:Menu ID="Menu1" runat="server" 
+                        DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" 
+                        Font-Bold="True" 
+	                    ForeColor="#FFFFCC" 
+                        Font-Size="12px"
+                        Font-Names="Verdana"
+     	                StaticSubMenuIndent="0"  
+     	                StaticEnableDefaultPopOutImage="False">
+
+       		            <StaticMenuItemStyle 
+			            CssClass="menuitem" 
+			            ItemSpacing="0"/>
+        	            <StaticHoverStyle 
+			            CssClass="hover" />
+           	            <StaticSelectedStyle 
+			            ForeColor="Black" 
+			            CssClass="selected" />
+                        <DynamicMenuItemStyle  
+			            CssClass="menuitem" />
+                        <DynamicHoverStyle CssClass="hover" />
+                        <DynamicMenuStyle  BackColor="Transparent" />
                     </asp:Menu>
                  <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
             </div>
