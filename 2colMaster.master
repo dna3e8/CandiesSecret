@@ -90,12 +90,14 @@
                 </asp:ContentPlaceHolder>
             </div>
             </div>
-            <div id="RightColumn">
-                <asp:ContentPlaceHolder ID="RightContent" runat="server">              
-                     <div class="rightpad">
-                        <p>Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget est. In hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit amet quam. Nunc commodo sodales nunc. Donec est nunc, porttitor et, accumsan nec, pretium quis, mauris. Duis sapien. Nulla felis lorem, 
-                    </div>
-                </asp:ContentPlaceHolder>
+            <div id="RightColumn">                              
+                    <div class="rightpad">
+                     <asp:ContentPlaceHolder ID="RightContent" runat="server">
+                        <p>
+                            Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget est. In hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit amet quam. Nunc commodo sodales nunc. Donec est nunc, porttitor et, accumsan nec, pretium quis, mauris. Duis sapien. Nulla felis lorem, 
+                        </p>                    
+                    </asp:ContentPlaceHolder>
+                </div>
             </div>
             <div class="clearfloat"></div>
         </div>

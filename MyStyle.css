@@ -68,6 +68,12 @@ h3
     color:Navy;
 }
 
+.phonenumber
+{
+    padding-top:5px;
+    padding-right:5px;
+}
+
 .moveleft
 {
     float:left;
@@ -85,7 +91,7 @@ h3
 
 .rightpad
 {
-    padding:8px;
+    padding:10px;
 }
 
 /* menuitem class is the CssClass value for the asp:Menu StaticMenuItemStyle 
