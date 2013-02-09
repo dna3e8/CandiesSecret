@@ -147,6 +147,7 @@ transparent background and display as a block rather than inline element */
 {
   background: transparent ! important;
   display: block;
+  color:white;
 }
 
 
