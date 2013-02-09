@@ -15,18 +15,21 @@
     <h3>
         Candie
     </h3>
+    <asp:Image ID="Image2" runat="server" AlternateText="TrufCandiefles"  CssClass="moveleft" ImageUrl="~/Images/Candie.png" />
     <p>
         Candie is married and has two girls. She loves cooking and is always coming up with great ideas and projects. She got her cooking certificate from Arizona Culinary Institute. Candie does the marketing for the business as well as updates and adds new products.
     </p>
     <h3>
     Gloria
     </h3>
+    <asp:Image ID="Image1" runat="server" AlternateText="TrufCandiefles"  CssClass="moveright" ImageUrl="~/Images/Gloria.png" />
     <p>
         Gloria is a financial advisor at Liberty Financial and is a close friend of Candie's. She invested well and is the financial backer for this business. Gloria also takes care of the accounting and books. Gloria lives with her daughter and two cats. 
     </p>
     <h3>
     Lance
     </h3>
+    <asp:Image ID="Image3" runat="server" AlternateText="TrufCandiefles"  CssClass="moveleft" ImageUrl="~/Images/Lance.png" />
     <p>
         Lance got his BA from ITT Technical Institute in Denver, CO. Lance works as a website designer and manages Candie's Secret's website. Lance is married and has two children.
     </p>
