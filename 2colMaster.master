@@ -44,7 +44,10 @@
                         <DynamicHoverStyle CssClass="hover" />
                         <DynamicMenuStyle  BackColor="Transparent" />
                     </asp:Menu>
-                 <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                   
+                 
             </div>
         
         
@@ -52,12 +55,17 @@
         <div id="MainContent">
             <div id="LeftColumn">
             <div class="leftpad">
+                <div id="sitepath">
+                     <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                     </asp:SiteMapPath>
+                 </div>
                 <asp:ContentPlaceHolder ID="LeftContent" runat="server">
                     <h1> Headline</h1>
                     <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque ornare ipsum at erat. Quisque elementum tempus urna. Donec ornare fringilla erat. Phasellus gravida lectus vel dui. Fusce eget justo at odio posuere dignissim. Sed porta, turpis sit amet viverra rhoncus, mauris urna interdum erat, nec semper dui diam ut libero. Donec adipiscing placerat metus. Integer eu eros vel risus ornare consequat. Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget est. In hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit amet quam. Nunc commod
             
                     </p>
+                   
 
                     <h2> subheading</h2>
                     <p>

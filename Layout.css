@@ -29,6 +29,14 @@
     padding-top:3px;
 }
 
+#sitepath
+{
+    height: 20px;
+    width:600px;
+   /* margin-left: 30px;*/
+    
+}
+
 #MainContent
 {
     width:900px;

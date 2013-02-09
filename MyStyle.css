@@ -53,6 +53,33 @@ a:hover
     text-align:left;
 }
 
+#sitepath
+{
+    color: #F9B8B0;
+    Background: #8F483F;
+}
+
+
+#sitepath a
+{
+    color: #F9B8B0;
+    Background: #8F483F;
+}
+
+#sitepath a:visited
+{
+    color: #E2A2E5;
+    Background: #8F483F;
+}
+
+#sitepath a:hover
+{
+    color: #F9B8B0;
+    Background: #0E044C;
+}CE7;
+    Background: #8F483F;
+}
+
 #RightColumn
 {
     text-align:left;
