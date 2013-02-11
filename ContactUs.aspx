@@ -9,13 +9,21 @@
 <p>
     Candie's Secret strives to give the best quality and customer service possible. Contact us with any and all questions, concerns or suggestions.
 </p>
- <div class="phonenumber">
-    Phone 216-427-9773 <br />
-    Address: <br />
+ <div id="contactinfo">
+    <h1>
+    Phone:
+    </h1>
+    216-427-9773 <br />
+    <h1>
+    Address:
+    </h1>
     Candie's Secret <br />
     1223 N Candy Ln <br />
     Maple Heights, Ohio 87995 <br />
-    Email: candie&co@candiessecret.com
+    <h1>
+    Email:
+    </h1>
+    candie&co@candiessecret.com
           
 </div>
 

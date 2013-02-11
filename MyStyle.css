@@ -76,8 +76,6 @@ a:hover
 {
     color: #F9B8B0;
     Background: #0E044C;
-}CE7;
-    Background: #8F483F;
 }
 
 #RightColumn
@@ -112,10 +110,15 @@ h3
     color:#0E044C;
 }
 
-.phonenumber
+#contactinfo
 {
     padding-top:5px;
     padding-right:5px;
+}
+
+#contactinfo h1
+{
+    background-color: #B4ACE7;
 }
 
 .moveleft
