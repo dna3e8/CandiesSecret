@@ -5,8 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Candie's Secret</title>
-    <link href="Layout.css" rel="stylesheet" type="text/css" />
-    <link href="MyStyle.css" rel="stylesheet" type="text/css" />
+    
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -15,8 +14,8 @@
     <div id="Container">
 
         <div id="Masthead">
-            <asp:Image ID="Image1" runat="server"  ImageUrl="~/Images/Banner2.png" AlternateText="Banner" CssClass="moveleft" />
-            <asp:Image ID="Image3" runat="server"  ImageUrl="~/Images/Logo2.png" AlternateText="Banner" CssClass="moveright" />
+            <asp:Image ID="Image1" runat="server"  ImageUrl="/Images/Banner2.png" AlternateText="Banner" CssClass="moveleft" />
+            <asp:Image ID="Image3" runat="server"  ImageUrl="/Images/Logo2.png" AlternateText="Banner" CssClass="moveright" />
             
         
         </div>
@@ -116,7 +115,7 @@
             This Website was Created for Educational Purposes <br />
                 <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
             <p>
-            Last Modified: 10 Feb 2013
+            Last Modified: 12 Feb 2013
             </p>
             </div> 
 
