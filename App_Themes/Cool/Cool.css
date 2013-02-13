@@ -30,7 +30,7 @@ a:hover
 
 #Masthead
 {
-    background-image: url('Images/Banner2.png');
+    /* background-image: url('Images/Banner2.png'); */
     color:6D0F03;
     font-size:small;
     text-align:right;
