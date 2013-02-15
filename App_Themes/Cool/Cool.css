@@ -148,6 +148,20 @@ h3
     padding:10px;
 }
 
+.imageleft
+{
+    float:left;
+    padding-right:10px;  
+}
+
+.imageright
+{
+    float:right;
+    padding-left:10px;
+}
+
+
+
 /* menuitem class is the CssClass value for the asp:Menu StaticMenuItemStyle 
 and also the DynamicMenuItemStyle */
 
