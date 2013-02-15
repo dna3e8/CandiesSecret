@@ -30,12 +30,19 @@ a:hover
 
 #Masthead
 {
-    /* background-image: url('Images/Banner2.png'); */
     color:6D0F03;
     font-size:small;
     text-align:right;
 }
+#banner
+{
+   background-image: url('Images/Banner2.png');   
+}
 
+#logo
+{
+    background-image: url('Images/Logo2.png'); 
+}
 #Navigation
 {
     background-color: #808080;
