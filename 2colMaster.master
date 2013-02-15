@@ -21,32 +21,11 @@
         </div>
         <div id="Navigation">
             <div id="menu">
-                 <asp:Menu ID="Menu1" runat="server" 
-                        DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" 
-                        Font-Bold="True" 
-	                    ForeColor="#FFFFCC" 
-                        Font-Size="12px"
-                        Font-Names="Verdana"
-     	                StaticSubMenuIndent="0"  
-     	                StaticEnableDefaultPopOutImage="False">
+                 <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+                        </asp:Menu>
 
-       		            <StaticMenuItemStyle 
-			            CssClass="menuitem" 
-			            ItemSpacing="0"/>
-        	            <StaticHoverStyle 
-			            CssClass="hover" />
-           	            <StaticSelectedStyle 
-			            ForeColor="Black" 
-			            CssClass="selected" />
-                        <DynamicMenuItemStyle  
-			            CssClass="menuitem" />
-                        <DynamicHoverStyle CssClass="hover" />
-                        <DynamicMenuStyle  BackColor="Transparent" />
-                    </asp:Menu>
-                    
-                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-                   
-                 
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
             </div>
         
         
@@ -113,7 +92,7 @@
         <div id="Footer">
             <div>
             This Website was Created for Educational Purposes <br />
-                <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+                <asp:HyperLink ID="ContactUs" SkinID="footer" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
             <p>
             Last Modified: 12 Feb 2013
             </p>
