@@ -16,7 +16,7 @@
         Candie
     </h3>
     <asp:Image ID="Image2" runat="server" AlternateText="TrufCandiefles"  CssClass="moveleft" ImageUrl="~/Images/Candie.png" />
-    <p>
+    <p class=">
         Candie is married and has two girls. She loves cooking and is always coming up with great ideas and projects. She got her cooking certificate from Arizona Culinary Institute. Candie does the marketing for the business as well as updates and adds new products.
     </p>
     <h3>

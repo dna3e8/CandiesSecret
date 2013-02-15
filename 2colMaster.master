@@ -16,9 +16,7 @@
         <div id="Masthead">
             <div id="banner"></div>
             <div id="logo"></div>
-            <asp:Image ID="Image1" runat="server"  ImageUrl="/Images/Banner2.png" AlternateText="Banner" CssClass="moveleft" />
-            <asp:Image ID="Image3" runat="server"  ImageUrl="/Images/Logo2.png" AlternateText="Banner" CssClass="moveright" />
-            
+                       
         
         </div>
         <div id="Navigation">
