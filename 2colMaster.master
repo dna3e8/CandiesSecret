@@ -86,7 +86,8 @@
                             DataFile="~/App_Code/Ad.xml"></asp:XmlDataSource>
                          </div>
                          <div id="rss">
-                             <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2">
+                             <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2" 
+                                 Width="100%">
                                  <ItemTemplate>
                                      <h4>
                                          <a href='<%# XPath("link") %>' target="_blank">
