@@ -79,12 +79,39 @@
             <div id="RightColumn">                              
                     <div class="rightpad">
                      <asp:ContentPlaceHolder ID="RightContent" runat="server">
-                        <p>
+                        <div id="adrotator">
                             <asp:AdRotator ID="AdRotator1" runat="server" Target="_blank" 
                             DataSourceID="XmlDataSource1"/>
                             <asp:XmlDataSource ID="XmlDataSource1" runat="server" 
                             DataFile="~/App_Code/Ad.xml"></asp:XmlDataSource>
-                        </p>                    
+                        </div>
+
+                        <div id="rss">
+                            <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2">
+                                <ItemTemplate>
+                                    <h4>
+                                        <a href='<%# XPath("link") %>' target="_blank">
+                                            <asp:Label runat="server" ID="TitleLabel" Text='<%# XPath("title") %>'></asp:Label>
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        <i>Published
+                                            <%#XPath("pubDate")%></i>
+                                    </p>
+                                    <p>
+                                        <asp:Label runat="server" ID="DescriptionLabel" Text='<%# XPath("description") %>'></asp:Label>
+                                    </p>
+                                    <p>
+                                        [<a href='<%# XPath("link") %> ' target="_blank">Read More</a>]
+                                    </p>
+                                    <br />
+                                </ItemTemplate>
+                            </asp:DataList>
+                            <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="http://kimcommando.wordpress.com/rss.xml"
+                                XPath="rss/channel/item[position( ) &lt;= 3]"></asp:XmlDataSource>
+                        </div>
+
+                                            
                     </asp:ContentPlaceHolder>
                 </div>
             </div>
