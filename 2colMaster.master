@@ -80,7 +80,10 @@
                     <div class="rightpad">
                      <asp:ContentPlaceHolder ID="RightContent" runat="server">
                         <p>
-                            Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget est. In hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit amet quam. Nunc commodo sodales nunc. Donec est nunc, porttitor et, accumsan nec, pretium quis, mauris. Duis sapien. Nulla felis lorem, 
+                            <asp:AdRotator ID="AdRotator1" runat="server" Target="_blank" 
+                            DataSourceID="XmlDataSource1"/>
+                            <asp:XmlDataSource ID="XmlDataSource1" runat="server" 
+                            DataFile="~/App_Code/Ad.xml"></asp:XmlDataSource>
                         </p>                    
                     </asp:ContentPlaceHolder>
                 </div>
