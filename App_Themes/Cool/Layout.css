@@ -68,6 +68,11 @@
     float:left;
 }
 
+#rss
+{
+    width:280px;
+}
+
 #Footer
 {
     width:900px;

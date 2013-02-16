@@ -91,6 +91,14 @@ a:hover
     font-size:small;
 }
 
+#adrotator
+{
+    text-align:center;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+
 #Footer
 {
     color:#6D0F03;
