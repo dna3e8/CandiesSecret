@@ -86,7 +86,31 @@
                             DataFile="~/App_Code/Ad.xml"></asp:XmlDataSource>
                          </div>
                          <div id="rss">
-                             <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2" 
+                             <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2">
+                                 <ItemTemplate>
+                                     <h4>
+                                         <a href='<%# XPath("link") %>' target="_blank">
+                                         <asp:Label runat="server" ID="rsstitle" Text='<%# XPath("title") %>'></asp:Label>
+                                         </a>
+                                     </h4>
+                                     <p id="rsspub">
+                                         <i>Published <%#XPath("pubDate")%></i>
+                                     </p>
+                                     <p id="rssdesc">
+                                         <%#XPath("description")%>
+                                     </p>
+                                     <p id="rsslink">
+                                         [<a href='<%# XPath("link") %> ' target="_blank">Read More</a>]
+                                     </p>
+                                     <br />
+                                 </ItemTemplate>
+                             </asp:DataList>
+                             <asp:XmlDataSource ID="XmlDataSource2" runat="server" 
+                                 DataFile="http://kimcommando.wordpress.com/rss.xml" XPath="rss/channel/item[position( ) &lt;= 3]" >
+                             </asp:XmlDataSource>
+
+
+                            <%-- <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2" 
                                  Width="100%">
                                  <ItemStyle Width="280px" />
                                  <ItemTemplate>
@@ -108,7 +132,7 @@
                                  </ItemTemplate>
                              </asp:DataList>
                              <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="http://kimcommando.wordpress.com/rss.xml"
-                                XPath="rss/channel/item[position( ) &lt;= 3]"></asp:XmlDataSource>
+                                XPath="rss/channel/item[position( ) &lt;= 3]"></asp:XmlDataSource>--%>
                          </div>
 
                                             
@@ -125,7 +149,7 @@
                 <asp:HyperLink ID="ContactUs" SkinID="footer" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
             <p>
             Last Modified: 12 Feb 2013
-            </p>
+                            </p>
             </div> 
 
         </div>
