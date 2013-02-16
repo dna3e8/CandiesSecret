@@ -71,6 +71,7 @@
 #rss
 {
     width:290px;
+    overflow:auto;
 }
 
 #Footer

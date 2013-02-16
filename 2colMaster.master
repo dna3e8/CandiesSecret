@@ -87,8 +87,12 @@
                          </div>
                          <div id="rss">
                              <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2" 
-                                 Width="100%">
-                                 <ItemTemplate>
+                                 Width="30px" Font-Bold="False" Font-Italic="False" Font-Overline="False" 
+                                 Font-Size="Smaller" Font-Strikeout="False" Font-Underline="False">
+                                 <AlternatingItemStyle BorderColor="Red" BorderStyle="Solid" />
+                                 <ItemStyle BorderColor="#009933" BorderStyle="Solid" Width="250px" />
+                                 <ItemTemplate >
+                                 <table width=200px>
                                      <h4>
                                          <a href='<%# XPath("link") %>' target="_blank">
                                          <asp:Label runat="server" ID="TitleLabel" Text='<%# XPath("title") %>'></asp:Label>
@@ -104,6 +108,7 @@
                                          [<a href='<%# XPath("link") %> ' target="_blank">Read More</a>]
                                      </p>
                                      <br />
+                                     </table>
                                  </ItemTemplate>
                              </asp:DataList>
                              <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="http://kimcommando.wordpress.com/rss.xml"
