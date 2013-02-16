@@ -88,6 +88,7 @@
                          <div id="rss">
                              <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2" 
                                  Width="100%">
+                                 <ItemStyle Width="280px" />
                                  <ItemTemplate>
                                      <h4>
                                          <a href='<%# XPath("link") %>' target="_blank">
