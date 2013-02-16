@@ -88,11 +88,11 @@
                          <div id="rss">
                              <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource2">
                                  <ItemTemplate>
-                                     <h4>
+                                     <h3>
                                          <a href='<%# XPath("link") %>' target="_blank">
                                          <asp:Label runat="server" ID="rsstitle" Text='<%# XPath("title") %>'></asp:Label>
                                          </a>
-                                     </h4>
+                                     </h3>
                                      <p id="rsspub">
                                          <i>Published <%#XPath("pubDate")%></i>
                                      </p>

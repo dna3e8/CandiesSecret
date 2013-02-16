@@ -70,7 +70,13 @@
 
 #rss
 {
-    width:290px;
+    width:285px;
+    padding-left:5px;
+}
+
+#rssdesc
+{
+    width:285px;
 }
 
 #Footer
