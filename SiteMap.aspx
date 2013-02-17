@@ -10,9 +10,8 @@
     Please use the following buttons, called a "site map" or "site tree", to navigate the site without getting lost. "Home" refers to the main website's page.
     </p>
 
-    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" 
-        BackColor="#E2A2E5" ForeColor="#6D0F03">
-        <HoverNodeStyle BackColor="#F9B8B0" ForeColor="#450247" />
+    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+        <HoverNodeStyle  />
     </asp:TreeView>
     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
 </asp:Content>

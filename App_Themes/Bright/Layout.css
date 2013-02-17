@@ -68,6 +68,17 @@
     float:left;
 }
 
+#rss
+{
+    width:285px;
+    padding-left:5px;
+}
+
+#rssdesc
+{
+    width:285px;
+}
+
 #Footer
 {
     width:900px;

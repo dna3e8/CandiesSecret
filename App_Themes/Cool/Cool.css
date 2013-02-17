@@ -186,7 +186,7 @@ and also the DynamicMenuItemStyle */
 
 #menu .menuitem
 {
-    background-image: url('../../Images/button_0.png');
+    background-image: url('Images/button_0.png');
     background-repeat: no-repeat; 
     height: 30px;
     width: 120px;
@@ -220,7 +220,7 @@ transparent background and display as a block rather than inline element */
 DynamicHoverStyle */
   
 #menu .hover { 
-  background-image: url('../../Images/button_1.png');
+  background-image: url('Images/button_1.png');
   background-repeat: no-repeat; 
   }
   
@@ -228,6 +228,6 @@ DynamicHoverStyle */
 /* selected class is the CssClass value for the asp:Menu StaticSelectedStyle */
  #menu .selected
   {
-      background-image: url('../../Images/button_2.png');
+      background-image: url('Images/button_2.png');
       background-repeat: no-repeat; 
   }

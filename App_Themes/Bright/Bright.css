@@ -1,7 +1,7 @@
 ﻿body
 {
-    background-color: #B4ACE7;
-    background-image: url('Images/Bkgnd2.png');
+    background-color: #D6153B;
+    background-image: url('Images/Bkgnd1.png');
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     color: #000000;
@@ -9,17 +9,17 @@
 
 a
 {
-    color:#0E044C;
+    color:#150B68;
 }
 
 a:visited
 {
-    color:#450247;
+    color:#2E8106;
 }
 
 a:hover
 {
-    color:#E62F17;
+    color:#8B0721;
 }
 
 
@@ -62,27 +62,27 @@ a:hover
 
 #sitepath
 {
-    color: #F9B8B0;
-    Background: #8F483F;
+    color: #8B0721;
+    Background: #EB768D;
 }
 
 
 #sitepath a
 {
-    color: #F9B8B0;
-    Background: #8F483F;
+    color: #8B0721;
+    Background: #EB768D;
 }
 
 #sitepath a:visited
 {
-    color: #E2A2E5;
-    Background: #8F483F;
+    color: #8B0721;
+    Background: #EB768D;
 }
 
 #sitepath a:hover
 {
-    color: #F9B8B0;
-    Background: #0E044C;
+    color: #EB768D;
+    Background: #8B0721;
 }
 
 #RightColumn
@@ -91,10 +91,24 @@ a:hover
     font-size:small;
 }
 
+#adrotator
+{
+    text-align:center;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+#rss
+{
+    color:#D6153B;
+    background-color:#F2D87A;
+}
+
+
 #Footer
 {
-    color:#6D0F03;
-    background-color:#E2A2E5;
+    color:#A03449;
+    background-color:#8076CF;
     text-align:center;
     font-size:14px;
 }
@@ -167,18 +181,19 @@ and also the DynamicMenuItemStyle */
 
 #menu
 {
-    background-color: #E2A2E5;
+    background-color: #4EC713;
 }
 
 #menu .menuitem
 {
-    background-image: url('../../Images/button_0.png');
+    background-image: url('Images/button_0.png');
     background-repeat: no-repeat; 
     height: 30px;
     width: 120px;
     text-align:center;
     padding-top:3px;
     margin:0;
+    
 }
 
 /*needed so the asp:Menu control anchor tags when rendered in browser have
@@ -187,6 +202,7 @@ transparent background and display as a block rather than inline element */
 #menu a, #menu a:visited
 {
   background: transparent ! important;
+  color:#FFF;
   display: block;
 }
 
@@ -206,14 +222,16 @@ transparent background and display as a block rather than inline element */
 DynamicHoverStyle */
   
 #menu .hover { 
-  background-image: url('../../Images/button_1.png');
+  background-image: url('Images/button_1.png');
   background-repeat: no-repeat; 
+  color:F2D87A;
   }
   
 
 /* selected class is the CssClass value for the asp:Menu StaticSelectedStyle */
- #menu .selected
+ #menu .selected 
   {
-      background-image: url('../../Images/button_2.png');
+      background-image: url('Images/button_2.png');
       background-repeat: no-repeat; 
+      color:#150B68;
   }

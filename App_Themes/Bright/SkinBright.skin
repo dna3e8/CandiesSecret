@@ -15,8 +15,8 @@ Default skin template. The following skins are provided as examples only.
 --%>
 
 <asp:TreeView runat="server" ExpandDepth="2" ImageSet="BulletedList3" 
-        ShowExpandCollapse="False">
-    <HoverNodeStyle Font-Underline="True" ForeColor="#FFB400" />
+        ShowExpandCollapse="False" BackColor="#F2D87A" ForeColor="#957607">
+    <HoverNodeStyle Font-Underline="True" BackColor="#97E372" ForeColor="#8B0721" />
     <NodeStyle Font-Names="Verdana" Font-Size="14px" ForeColor="#1B00FF" 
             HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" 
             Font-Bold="True" />
