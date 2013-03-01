@@ -68,6 +68,12 @@
     float:left;
 }
 
+#OneColumn
+{
+    width:900px;
+    float:left;
+}
+
 #rss
 {
     width:285px;

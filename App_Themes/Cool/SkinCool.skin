@@ -80,3 +80,19 @@ Default skin template. The following skins are provided as examples only.
 </asp:HyperLink>
 
 
+ <asp:LoginStatus  runat="server"
+         ForeColor="#450247" 
+         Font-Bold="True" 
+	            Font-Size="12px"
+        Font-Names="Verdana"
+         
+      
+ 
+ />
+                    
+<asp:LoginName runat="server"
+        Font-Bold="True" 
+	    ForeColor="#393363" 
+        Font-Size="12px"
+        Font-Names="Verdana"
+/>
