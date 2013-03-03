@@ -38,7 +38,7 @@
                 </li>
                 <li class="formright">
                     <asp:Label ID="PhoneLBL" runat="server" Text="Phone:"></asp:Label>
-                    <asp:TextBox ID="PhoneTXT" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="PhoneTXT" SkinID="required" runat="server"></asp:TextBox>
                 </li>
                 <li class="formleft">
                     <asp:Label ID="CityLBL" runat="server" Text="City:"></asp:Label>
