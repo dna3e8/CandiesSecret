@@ -118,16 +118,16 @@ Default skin template. The following skins are provided as examples only.
  <asp:TextBox SkinID="required" CssClass="required" runat="server"
  BackColor="#F9CFB0" Width="130px" ForeColor="#6D1903" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
 </asp:TextBox>
-<asp:TextBox runat="server" BackColor="#F9CFB0" 
-    ForeColor="#6D1903" Width="130px" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
+<asp:TextBox runat="server" BackColor="#F9B8B0" 
+    ForeColor="#0E044C" Width="130px" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
     </asp:TextBox>
 
      <asp:TextBox runat="server" SkinID="Comment" Width="250px"
-     BackColor="#F9CFB0" ForeColor="#6D1903" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
+     BackColor="#F9B8B0" ForeColor="#0E044C" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
     </asp:TextBox>
 
- <asp:Button runat="server" CssClass="button" BackColor="#F7D29D" 
-        BorderColor="#663300" BorderStyle="Outset" BorderWidth="4px" 
+ <asp:Button runat="server" CssClass="button" BackColor="#F9B8B0" 
+        BorderColor="#6D0F03" BorderStyle="Outset" BorderWidth="4px" 
         Font-Names="Arial Black" Font-Size="17px" Width="200px" />
 
         <asp:CheckBoxList runat="server" 

@@ -68,7 +68,7 @@
                 </li>
                 <li class="formleft">
                     <asp:Label ID="AnniversaryLBL" runat="server" Text="Anniversary:"></asp:Label>
-                    <asp:TextBox ID="AnniversaryTXT" SkinID="required" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="AnniversaryTXT" runat="server"></asp:TextBox>
                 </li>
                 <li class="formright">
                     <asp:Label ID="AgLBL" runat="server" Text="Age:"></asp:Label>
@@ -88,7 +88,7 @@
                 </li>
                 <li class="formright">
                     <asp:Label ID="SexualPrefLBL" runat="server" Text="Sexual Pref:"></asp:Label>
-                    <<asp:DropDownList ID="SexalPrefDDL" runat="server">
+                    <asp:DropDownList ID="SexalPrefDDL" runat="server">
                         <asp:ListItem>Gay Lesbian</asp:ListItem>
                         <asp:ListItem>Straight</asp:ListItem>
                         <asp:ListItem>Bisexual</asp:ListItem>
