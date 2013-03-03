@@ -33,19 +33,19 @@
                         ErrorMessage="Last Name is Required" Display="Dynamic">*</asp:RequiredFieldValidator>
                 </li>
                 <li class="formleft">
-                    <asp:Label ID="EmailLBL" runat="server" Text="Email:"></asp:Label>
-                    <asp:TextBox ID="EmailTXT" SkinID="required" runat="server"></asp:TextBox>
+                    <asp:Label ID="StreetAddrLBL" runat="server" Text="Street Addr:"></asp:Label>
+                    <asp:TextBox ID="StreetAddr" SkinID="required" runat="server"></asp:TextBox>
                 </li>
                 <li class="formright">
                     <asp:Label ID="PhoneLBL" runat="server" Text="Phone:"></asp:Label>
                     <asp:TextBox ID="PhoneTXT" runat="server"></asp:TextBox>
                 </li>
                 <li class="formleft">
-                    <asp:Label ID="StreetAddrLBL" runat="server" Text="Street Addr:"></asp:Label>
-                    <asp:TextBox ID="StreetAddrTXT" SkinID="required" runat="server"></asp:TextBox>
+                    <asp:Label ID="CityLBL" runat="server" Text="City:"></asp:Label>
+                    <asp:TextBox ID="CityTXT" SkinID="required" runat="server"></asp:TextBox>
                 </li>
                 <li class="formright">
-                    <asp:Label ID="StateLBL" runat="server" Text="Your State:"></asp:Label>
+                    <asp:Label ID="StateLBL" runat="server" Text="State:"></asp:Label>
                     <!-- Add DropDownList for States here -->
                     <asp:DropDownList ID="StateDDL" runat="server" DataSourceID="XmlDataSource1" DataTextField="name"
                         DataValueField="value">
