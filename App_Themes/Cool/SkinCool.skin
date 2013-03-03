@@ -66,7 +66,15 @@ Default skin template. The following skins are provided as examples only.
 
 
  <asp:Label runat="server" Font-Bold="True" Font-Names="Georgia" 
-    Font-Size="16px" ForeColor="#1B00FF" />
+    ForeColor="#6D1903" Font-Size="14px" CssClass="alignright" />
+
+ <asp:Label runat="server" Font-Bold="True" Font-Names="Georgia" 
+    ForeColor="#6D1903" Font-Size="14px" SkinID="full" CssClass="fullright"  />
+
+<asp:Label runat="server" SkinID="CountDown" BackColor="#F9CFB0" BorderColor="#E64217" 
+ BorderStyle="Double" BorderWidth="3px" CssClass="clearme" 
+ Font-Bold="True" Width="100px" />
+
 
 <asp:HyperLink   
      runat="server"  
@@ -96,3 +104,41 @@ Default skin template. The following skins are provided as examples only.
         Font-Size="12px"
         Font-Names="Verdana"
 />
+
+
+
+
+
+<asp:DropDownList runat="server" BackColor="#F9CFB0" 
+    ForeColor="#6D1903" Font-Bold="True" Font-Names="Verdana" Font-Size="14px" 
+    Width="130px" Height="22px">
+</asp:DropDownList>
+
+
+ <asp:TextBox SkinID="required" CssClass="required" runat="server"
+ BackColor="#F9CFB0" Width="130px" ForeColor="#6D1903" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
+</asp:TextBox>
+<asp:TextBox runat="server" BackColor="#F9CFB0" 
+    ForeColor="#6D1903" Width="130px" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
+    </asp:TextBox>
+
+     <asp:TextBox runat="server" SkinID="Comment" Width="250px"
+     BackColor="#F9CFB0" ForeColor="#6D1903" Font-Bold="True" Font-Names="Verdana" Font-Size="14px">
+    </asp:TextBox>
+
+ <asp:Button runat="server" CssClass="button" BackColor="#F7D29D" 
+        BorderColor="#663300" BorderStyle="Outset" BorderWidth="4px" 
+        Font-Names="Arial Black" Font-Size="17px" Width="200px" />
+
+        <asp:CheckBoxList runat="server" 
+                        RepeatDirection="Horizontal" Font-Bold="True" Font-Names="Georgia" 
+                        Font-Size="14px" ForeColor="Maroon">
+       </asp:CheckBoxList>
+
+        <asp:RadioButtonList runat="server" 
+                        RepeatDirection="Horizontal" Font-Bold="True" Font-Names="Georgia" 
+                        Font-Size="14px" ForeColor="Maroon">
+        </asp:RadioButtonList>
+
+        <asp:FileUpload runat="server" BackColor="#F9CFB0" Font-Bold="True" Font-Names="Georgia" 
+                  Font-Size="14px" ForeColor="Maroon" />
