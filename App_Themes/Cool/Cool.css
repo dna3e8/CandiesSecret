@@ -231,3 +231,71 @@ DynamicHoverStyle */
       background-image: url('Images/button_2.png');
       background-repeat: no-repeat; 
   }
+
+/* Form Style Rules */
+/* Form Style Rules */
+
+fieldset
+{
+    border: solid #F97D6D 3px;
+    padding:3px;
+}
+
+legend
+{
+    padding-right: 10px;
+    color:#911096;
+    font-weight: bold;
+}
+
+fieldset ol
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+fieldset li
+{
+    line-height: 300%;
+    text-align: right;
+    margin:0;
+    padding:0;
+}
+
+
+.alignright
+{
+    text-align:right;
+    padding-right:5px;
+    vertical-align:middle;
+}
+
+.fullright
+{
+    text-align:right;
+    padding-right:5px;
+    vertical-align:middle;
+}
+
+.formfull
+{
+    text-align:left;
+}
+
+.required
+{
+    border: solid Green 3px;
+}
+
+.button 
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-variant:small-caps;
+}
+
+.listleft
+{
+    text-align:center;
+}

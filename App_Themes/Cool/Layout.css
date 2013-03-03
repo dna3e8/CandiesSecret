@@ -95,3 +95,37 @@
 {
     clear:both
 }
+
+
+/* Form Style Rules */
+.formleft
+{
+    float:left;
+    width: 275px;
+}
+
+.formright
+{
+    float:right;
+    width:275px;
+}
+
+.formsm
+{
+    float:left;
+    width: 125px;
+}
+
+.formlg
+{
+    float:right;
+    text-align:left;
+    width: 405px;
+    margin:0;
+}
+
+.listleft
+{
+    width: 125px;
+    float:left;
+}
