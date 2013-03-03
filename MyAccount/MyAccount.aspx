@@ -50,7 +50,7 @@
                     <asp:DropDownList ID="StateDDL" runat="server" DataSourceID="XmlDataSource1" DataTextField="name"
                         DataValueField="value">
                     </asp:DropDownList>
-                    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Code/States.xml"
+                    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Code/SexualPref.xml"
                         XPath="States/State"></asp:XmlDataSource>
                 </li>
             </ol>
@@ -59,48 +59,45 @@
         <asp:Panel ID="Panel1" runat="server" GroupingText="Additional Infromation">
             <ol>
                 <li class="formleft">
-                    <asp:Label ID="Label1" runat="server"><span style="text-decoration:underline;">F</span>irst Name:</asp:Label>
-                    <asp:TextBox ID="TextBox1" SkinID="required" AccessKey="F" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="FNameTXT"
-                        ErrorMessage="First Name is required" Display="Dynamic">*</asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="FNameTXT"
-                        ErrorMessage="Not valid first name" ValidationExpression="^[a-zA-Z'.\s]{1,40}$"
-                        Display="Dynamic">*</asp:RegularExpressionValidator>
+                    <asp:Label ID="FavoriteColorLBL" runat="server">Fav. Color:</asp:Label>
+                    <asp:TextBox ID="FavoriteColorTXT"  runat="server"></asp:TextBox>
+                    
                 </li>
                 <li class="formright">
-                    <asp:Label ID="Label2" runat="server"><span style="text-decoration:underline;">L</span>ast Name:</asp:Label>
-                    <asp:TextBox ID="TextBox2" SkinID="required" AccessKey="L" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="LNameTXT"
-                        runat="server" ErrorMessage="Last Name is Required" Display="Dynamic">*</asp:RequiredFieldValidator>
+                    <asp:Label ID="BirthdayLBL" runat="server">Birthday:</asp:Label>
+                    <asp:TextBox ID="BirthdayTXT"  runat="server"></asp:TextBox>
+                    
                 </li>
                 <li class="formleft">
-                    <asp:Label ID="Label3" runat="server" Text="Email:"></asp:Label>
-                    <asp:TextBox ID="TextBox3" SkinID="required" runat="server"></asp:TextBox>
+                    <asp:Label ID="AnniversaryLBL" runat="server" Text="Anniversary:"></asp:Label>
+                    <asp:TextBox ID="AnniversaryTXT" SkinID="required" runat="server"></asp:TextBox>
                 </li>
                 <li class="formright">
-                    <asp:Label ID="Label4" runat="server" Text="Phone:"></asp:Label>
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <asp:Label ID="AgLBL" runat="server" Text="Age:"></asp:Label>
+                    <asp:TextBox ID="AgeTXT" runat="server"></asp:TextBox>
                 </li>
                 <li class="formleft">
-                    <asp:Label ID="JobTitleLBL" runat="server" Text="JobTitle:"></asp:Label>
-                    <!-- Add DropDownList for JobTitles here -->
-                    <asp:DropDownList ID="JobTitleDDL" runat="server">
+                    <asp:Label ID="IncomeLBL" runat="server" Text="Income:"></asp:Label>
+                 
+                    <asp:DropDownList ID="IncomeDDL" runat="server">
                         <asp:ListItem Selected="True">None</asp:ListItem>
-                        <asp:ListItem>Worker Bee</asp:ListItem>
-                        <asp:ListItem>Salesperson</asp:ListItem>
-                        <asp:ListItem>Snoopervisor</asp:ListItem>
+                        <asp:ListItem><20K</asp:ListItem>
+                        <asp:ListItem>20K-30K</asp:ListItem>
+                        <asp:ListItem>30K-50K</asp:ListItem>
+                        <asp:ListItem>30K-90K</asp:ListItem>
+                        <asp:ListItem>30K-90K</asp:ListItem>
+                        <asp:ListItem>>90K</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="JobTitleDDL"
-                        InitialValue="None" ErrorMessage="Job Title is required" Display="Dynamic">*</asp:RequiredFieldValidator>
+                  
                 </li>
                 <li class="formright">
-                    <asp:Label ID="Label6" runat="server" Text="Your State:"></asp:Label>
-                    <!-- Add DropDownList for States here -->
-                    <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="XmlDataSource1"
-                        DataTextField="name" DataValueField="value">
+                    <asp:Label ID="SexualPrefLBL" runat="server" Text="Sexual Pref:"></asp:Label>
+                    <<asp:DropDownList ID="SexalPrefDDL" runat="server">
+                        <asp:ListItem>Gay/Lesbian</asp:ListItem>
+                        <asp:ListItem>Straight</asp:ListItem>
+                        <asp:ListItem>Bisexual</asp:ListItem>
+                         <asp:ListItem>Other</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="~/App_Code/States.xml"
-                        XPath="States/State"></asp:XmlDataSource>
                 </li>
             </ol>
         </asp:Panel>
