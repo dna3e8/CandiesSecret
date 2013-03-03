@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<States>
-    <State name = "Gay/Lesbian" value = "Gay"  />
-    <State name = "Straight" value = "ST" />
-    <State name = "Bisexual" value = "BI" />
-    <State name = "Other" value = "Other" />
-</States>
