@@ -93,12 +93,71 @@
                 <li class="formright">
                     <asp:Label ID="SexualPrefLBL" runat="server" Text="Sexual Pref:"></asp:Label>
                     <<asp:DropDownList ID="SexalPrefDDL" runat="server">
-                        <asp:ListItem>Gay/Lesbian</asp:ListItem>
+                        <asp:ListItem>Gay Lesbian</asp:ListItem>
                         <asp:ListItem>Straight</asp:ListItem>
                         <asp:ListItem>Bisexual</asp:ListItem>
                          <asp:ListItem>Other</asp:ListItem>
                     </asp:DropDownList>
+                </li>          
+                 <li class="formsm"> 
+                    <asp:Label ID="GenderLBL" runat="server" Text="Gender:"></asp:Label>
                 </li>
+                <li class="formlg">
+                    <asp:RadioButtonList ID="GenderRBL" runat="server" 
+                        RepeatDirection="Horizontal" >
+                        <asp:ListItem Selected="True">Male</asp:ListItem>
+                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem >Transgender</asp:ListItem>
+                    </asp:RadioButtonList>
+                </li>
+                <li class="formsm"> 
+                    <asp:Label ID="RelationshipLBL" runat="server" Text="Relationship:"></asp:Label>
+                </li>
+                <li class="formlg">
+                    <asp:RadioButtonList ID="RelationshipRDB" runat="server" 
+                        RepeatDirection="Horizontal" >
+                        <asp:ListItem Selected="True">Married</asp:ListItem>
+                        <asp:ListItem>Single</asp:ListItem>
+                        <asp:ListItem >Divorced</asp:ListItem>
+                    </asp:RadioButtonList>
+                </li>
+                <li class="formsm"> 
+                    <asp:Label ID="RentingOwnLBL" runat="server" Text="Renting/Own:"></asp:Label>
+                </li>
+                <li class="formlg">
+                    <asp:RadioButtonList ID="RentOwnRBL" runat="server" 
+                        RepeatDirection="Horizontal" >
+                        <asp:ListItem Selected="True">Renting</asp:ListItem>
+                        <asp:ListItem>Own</asp:ListItem>
+                    </asp:RadioButtonList>
+                </li>
+                <li class="formsm"> 
+                    <asp:Label ID="EducationLBL" runat="server" Text="Education:"></asp:Label>
+                </li>
+                <li class="formlg">
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" 
+                        RepeatDirection="Horizontal" >
+                        <asp:ListItem Selected="True">Hihg School</asp:ListItem>
+                        <asp:ListItem>Collage</asp:ListItem>
+                        <asp:ListItem >Post Collage</asp:ListItem>
+                    </asp:RadioButtonList>
+                </li>
+
+
+
+                <li class="formsm"> 
+                    <asp:Label ID="ChildrenLBL" runat="server" Text="Children's Ages:"></asp:Label>
+                </li>
+                <li class="formlg">
+                     
+                    <asp:CheckBoxList ID="CheckBoxList1" runat="server"  >
+                        <asp:ListItem>0-5yrs</asp:ListItem>
+                        <asp:ListItem>5-10yrs</asp:ListItem>
+                        <asp:ListItem>11-19yrs</asp:ListItem>
+                         <asp:ListItem>20-40yrs</asp:ListItem>
+                    </asp:CheckBoxList>
+                </li>
+
             </ol>
         </asp:Panel>
     </div>
