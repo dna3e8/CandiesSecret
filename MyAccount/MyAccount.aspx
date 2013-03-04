@@ -12,7 +12,8 @@
         </p>
     </div>
     <div>
-        <!-- Validtion Summary control here -->
+        <asp:ValidationSummary ID="ValidationSummary1" HeaderText="Please fix the folowing errors:"
+            runat="server" />
     </div>
     <div>
         <asp:Panel ID="ContactPNL" runat="server" GroupingText="Contact Information: *">
@@ -31,18 +32,48 @@
                     <asp:TextBox ID="LNameTXT" SkinID="required" AccessKey="L" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="LNameRQV" ControlToValidate="LNameTXT" runat="server"
                         ErrorMessage="Last Name is Required" Display="Dynamic">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="LNameRegV" runat="server" ControlToValidate="LNameTXT"
+                        ErrorMessage="Not valid last name" ValidationExpression="^[a-zA-Z'.\s]{1,40}$"
+                        Display="Dynamic">*</asp:RegularExpressionValidator>
                 </li>
                 <li class="formleft">
                     <asp:Label ID="StreetAddrLBL" runat="server" Text="Street Addr:"></asp:Label>
-                    <asp:TextBox ID="StreetAddr" SkinID="required" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="StreetAddrTXT" SkinID="required" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="StreetAddrRFV" runat="server" 
+                        ControlToValidate="StreetAddrTXT" ErrorMessage="Street Address is required" 
+                        Display="Dynamic">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="StreetAddrREV" runat="server" ControlToValidate="StreetAddrTXT" 
+                    ErrorMessage="Not valid address"  
+                        Display="Dynamic" ValidationExpression="^[a-zA-Z0-9\s,'-]*$">*</asp:RegularExpressionValidator>
+
+
+
                 </li>
                 <li class="formright">
                     <asp:Label ID="PhoneLBL" runat="server" Text="Phone:"></asp:Label>
                     <asp:TextBox ID="PhoneTXT" SkinID="required" runat="server"></asp:TextBox>
+
+                    <asp:RequiredFieldValidator ID="PhoneRFV" runat="server" 
+                        ControlToValidate="PhoneTXT" ErrorMessage="Street Address is required" 
+                        Display="Dynamic">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="PhoneREV" runat="server" ControlToValidate="PhoneTXT" 
+                    ErrorMessage="Not valid Phone number"  
+                        Display="Dynamic" ValidationExpression="^[\\(]{0,1}([0-9]){3}[\\)]{0,1}[ ]?([^0-1]){1}([0-9]){2}[ ]?[-]?[ ]?([0-9]){4}[ ]*((x){0,1}([0-9]){1,5}){0,1}$">*</asp:RegularExpressionValidator>
+
+
+
                 </li>
                 <li class="formleft">
                     <asp:Label ID="CityLBL" runat="server" Text="City:"></asp:Label>
                     <asp:TextBox ID="CityTXT" SkinID="required" runat="server"></asp:TextBox>
+
+
+                    <asp:RequiredFieldValidator ID="CityRFV" ControlToValidate="CityTXT" runat="server"
+                        ErrorMessage="Last Name is Required" Display="Dynamic">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="CityREV" runat="server" ControlToValidate="CityTXT"
+                        ErrorMessage="Not valid last name" ValidationExpression="^[a-zA-Z'.\s]{1,40}$"
+                        Display="Dynamic">*</asp:RegularExpressionValidator>
+
                 </li>
                 <li class="formright">
                     <asp:Label ID="StateLBL" runat="server" Text="State:"></asp:Label>
@@ -50,34 +81,56 @@
                     <asp:DropDownList ID="StateDDL" runat="server" DataSourceID="XmlDataSource1" DataTextField="name"
                         DataValueField="value">
                     </asp:DropDownList>
-                    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Code/SexualPref.xml"
+                    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Code/States.xml"
                         XPath="States/State"></asp:XmlDataSource>
+
+                        <asp:RequiredFieldValidator ID="StateRFV" runat="server" 
+                            ControlToValidate="StateDDL" InitialValue="Select State" 
+                            ErrorMessage="State is required" Display="Dynamic">*</asp:RequiredFieldValidator>
+
+
                 </li>
             </ol>
         </asp:Panel>
         <br />
+
         <asp:Panel ID="AddtlInfo" runat="server" GroupingText="Additional Infromation">
             <ol>
                 <li class="formleft">
                     <asp:Label ID="FavoriteColorLBL" runat="server">Fav. Color:</asp:Label>
                     <asp:TextBox ID="FavoriteColorTXT" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="FavoriteColorREV" runat="server" ControlToValidate="FavoriteColorTXT"
+                        ErrorMessage="Color too long" ValidationExpression="^[a-zA-Z'.\s]{1,10}$"
+                        Display="Dynamic" >*</asp:RegularExpressionValidator>
                 </li>
                 <li class="formright">
                     <asp:Label ID="BirthdayLBL" runat="server">Birthday:</asp:Label>
                     <asp:TextBox ID="BirthdayTXT" runat="server"></asp:TextBox>
+
+                    <asp:CompareValidator ID="BirthdayCV" ControlToValidate="BirthdayTXT" Type="Date" Operator="DataTypeCheck" 
+                    runat="server" ErrorMessage="Birthdate must be MM/DD/YYYY" Display="Dynamic" >*</asp:CompareValidator>
+
                 </li>
                 <li class="formleft">
                     <asp:Label ID="AnniversaryLBL" runat="server" Text="Anniversary:"></asp:Label>
                     <asp:TextBox ID="AnniversaryTXT" runat="server"></asp:TextBox>
+
+                    <asp:CompareValidator ID="AnniversaryCV" ControlToValidate="AnniversaryTXT" Type="Date" Operator="DataTypeCheck" 
+                    runat="server" ErrorMessage="Anniversary must be MM/DD/YYYY" Display="Dynamic" >*</asp:CompareValidator>
                 </li>
                 <li class="formright">
                     <asp:Label ID="AgLBL" runat="server" Text="Age:"></asp:Label>
                     <asp:TextBox ID="AgeTXT" runat="server"></asp:TextBox>
+
+                    
+                        <asp:RangeValidator ID="AgeRAV" runat="server" ControlToValidate="AgeTXT" 
+                    Type="Integer" MinimumValue="0" MaximumValue="120" 
+                        ErrorMessage="Age must be integer 0-120" Display="Dynamic" >*</asp:RangeValidator>
                 </li>
                 <li class="formleft">
                     <asp:Label ID="IncomeLBL" runat="server" Text="Income:"></asp:Label>
                     <asp:DropDownList ID="IncomeDDL" runat="server">
-                        <asp:ListItem Selected="True">None</asp:ListItem>
+                        <asp:ListItem Selected="True">No Responce</asp:ListItem>
                         <asp:ListItem><20K</asp:ListItem>
                         <asp:ListItem>20K-30K</asp:ListItem>
                         <asp:ListItem>30K-50K</asp:ListItem>
@@ -89,8 +142,8 @@
                 <li class="formright">
                     <asp:Label ID="SexualPrefLBL" runat="server" Text="Sexual Pref:"></asp:Label>
                     <asp:DropDownList ID="SexalPrefDDL" runat="server">
-                        <asp:ListItem>Gay Lesbian</asp:ListItem>
                         <asp:ListItem>Straight</asp:ListItem>
+                        <asp:ListItem>Gay Lesbian</asp:ListItem>
                         <asp:ListItem>Bisexual</asp:ListItem>
                         <asp:ListItem>Other</asp:ListItem>
                     </asp:DropDownList>
@@ -139,10 +192,10 @@
                 </li>
                 <li class="formlg">
                     <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-                        <asp:ListItem>0-5yrs</asp:ListItem>
-                        <asp:ListItem>5-10yrs</asp:ListItem>
-                        <asp:ListItem>11-19yrs</asp:ListItem>
-                        <asp:ListItem>20-40yrs</asp:ListItem>
+                        <asp:ListItem>0-5 yrs</asp:ListItem>
+                        <asp:ListItem>5-10 yrs</asp:ListItem>
+                        <asp:ListItem>11-19 yrs</asp:ListItem>
+                        <asp:ListItem>20-40 yrs</asp:ListItem>
                     </asp:CheckBoxList>
                 </li>
                 <li class="formleft">
@@ -154,11 +207,16 @@
                             Rows="3">
                         </asp:TextBox>
                     </asp:Panel>
+                    <asp:RegularExpressionValidator ID="CommentREV" runat="server" ControlToValidate="CommentTXT"
+                        ErrorMessage="Comment too long"
+                        Display="Dynamic"  
+                        ValidationExpression="(\s|.){0,300}$">*</asp:RegularExpressionValidator>
                 </li>
             </ol>
         </asp:Panel>
         <div class="formleft">
-            <asp:Button ID="SubmitBTN" runat="server" Text="Submit"  />
+            <asp:Button ID="SubmitBTN" runat="server" Text="Submit"  
+                onclick="SubmitBTN_Click" />
         </div>
         <div class="formright">
             <asp:Button ID="CancelBTN" runat="server" Text="Cancel" />

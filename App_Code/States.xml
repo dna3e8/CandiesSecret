@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <States>
+    <State name = "Select State" value = "Select State"  />
     <State name = "Alabama" value = "AL"  />
     <State name = "Alaska" value = "AK" />
     <State name = "Arizona" value = "AZ" />
