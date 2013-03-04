@@ -93,6 +93,7 @@ Default skin template. The following skins are provided as examples only.
          Font-Bold="True" 
 	            Font-Size="12px"
         Font-Names="Verdana"
+        Padding="5px"
          
       
  
@@ -103,6 +104,7 @@ Default skin template. The following skins are provided as examples only.
 	    ForeColor="#393363" 
         Font-Size="12px"
         Font-Names="Verdana"
+        Padding="5px"
 />
 
 

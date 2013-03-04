@@ -150,6 +150,7 @@ h3
 .moveright
 {
     float:right;
+    padding-right: 5px;
 }
 
 .leftpad
