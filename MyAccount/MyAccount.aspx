@@ -215,8 +215,8 @@
             </ol>
         </asp:Panel>
         <div class="formleft">
-            <asp:Button ID="SubmitBTN" runat="server" Text="Submit"  
-                onclick="SubmitBTN_Click" />
+            <asp:Button ID="SubmitBTN" runat="server" Text="Submit"  />
+               
         </div>
         <div class="formright">
             <asp:Button ID="CancelBTN" runat="server" Text="Cancel" />

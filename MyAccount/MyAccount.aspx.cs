@@ -11,12 +11,4 @@ public partial class Default2 : System.Web.UI.Page
     {
 
     }
-    protected void SubmitBTN_Click(object sender, EventArgs e)
-    {
-        bool isValidTest = false;
-        Validate("1");
-        isValidTest = IsValid;
-        Validate("2");
-        if (!isValidTest) return;
-    }
 }
